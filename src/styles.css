@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "IBM PlexSans Bold";
+  src:
+    url("./assets/fonts/IBMPlexSans-Bold.woff") format("woff"),
+    url("./assets/fonts/IBMPlexSans-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM PlexSans SemiBold";
+  src:
+    url("./assets/fonts/IBMPlexSans-SemiBold.woff") format("woff"),
+    url("./assets/fonts/IBMPlexSans-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM PlexSerif";
+  src:
+    url("./assets/fonts/IBMPlexSerif-Regular.woff") format("woff"),
+    url("./assets/fonts/IBMPlexSerif-Regular.woff2") format("woff2");
+}
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 10fr 88fr 2fr;
+  margin: 0;
+}
+
+/*--------------------- HEADER STYLES -------------------*/
+
+.header {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  background-color: rgb(29, 29, 29);
+  color: rgb(214, 214, 214);
+  font-family: 'IBM PlexSans Bold';
+}
+
+.header-title {
+  font-size: 3.8rem;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.header-nav {
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.header-button {
+  border: none;
+  background-color: rgb(29, 29, 29);
+  color: rgb(214, 214, 214);
+  width: 100px;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'IBM PlexSans SemiBold';
+}
+
+/*------------------- FOOTER STYLES ---------------------*/
+footer {
+  background-color: rgb(29, 29, 29);
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(214, 214, 214);
+  z-index: 2;
+  font-family: 'IBM PlexSerif';
+  font-size: 1.1rem;
+  padding: 2px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  text-decoration: underline;
+  color: rgb(214, 214, 214);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
