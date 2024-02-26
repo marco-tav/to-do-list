@@ -1,0 +1,25 @@
+footer {
+  background-color: rgb(29, 29, 29);
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(214, 214, 214);
+  z-index: 2;
+  font-family: 'IBM PlexSerif';
+  font-size: 1.1rem;
+  padding: 2px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  text-decoration: underline;
+  color: rgb(214, 214, 214);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
