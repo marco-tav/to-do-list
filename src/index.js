@@ -1,10 +1,11 @@
 import './normalize.css';
 import './styles.css';
-import './components/header/header-styles.css';
-import './components/footer/footer-styles.css';
 
-import createHeader from './components/header/header-dom';
-import createFooter from './components/footer/footer-dom';
+import createHeader from './components/header/header.js';
+import './components/header/header-styles.css';
+
+import createFooter from './components/footer/footer.js';
+import './components/footer/footer-styles.css';
 
 import PlexSansBold1 from './assets/fonts/IBMPlexSans-Bold.woff';
 import PlexSansBold2 from './assets/fonts/IBMPlexSans-Bold.woff2';
