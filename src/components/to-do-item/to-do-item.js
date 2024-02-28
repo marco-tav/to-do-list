@@ -2,7 +2,7 @@ function toDoItem(name, description, priority, year, month, day, hours, minutes,
   const itemName = name;
   const itemDescription = description;
   const itemPriority = priority;
-  const itemDueDate = new Date(year, month, day, hours, minutes); // I must first look how to format using date-fns
+  const itemDueDate = new Date( `${year}-${month}-${day}T${hours}:${minutes}:00` ); // I must first look how to format using date-fns
   const itemId = `${listName}-${name}`;
 
   function getName() {
